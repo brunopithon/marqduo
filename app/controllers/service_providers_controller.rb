@@ -65,6 +65,6 @@ class ServiceProvidersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def service_provider_params
-      params.require(:service_provider).permit(:person, :activity, :phone_number_1, :phone_number_2, :obs)
+      params.require(:service_provider).permit(:person, :activity, :city_id, :phone_number_1, :phone_number_2, :obs)
     end
 end
