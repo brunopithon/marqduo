@@ -32,6 +32,11 @@
   </div>
 
   <div>
+    <%= form.label :city, style: "display: block" %>
+    <%= form.select("city_id", City.all.collect { |c| [ c.city_name, c.id ] }, { include_blank: true })%>
+  </div>
+
+  <div>
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email %>
   </div>

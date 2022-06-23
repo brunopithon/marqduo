@@ -8,7 +8,8 @@
       <th>Company</th>
       <th>Responsible</th>
       <th>Activity</th>
-      <th>Commission</th>      
+      <th>Commission</th> 
+      <th>City</th>     
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= supplier.responsible %></td>
         <td><%= supplier.activity %></td>
         <td><%= supplier.commission %></td>
+        <td><%= supplier.city.city_name %></td>
         <td><%= link_to 'Show', supplier %></td>
         <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
         <td><%= link_to 'Destroy', supplier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
